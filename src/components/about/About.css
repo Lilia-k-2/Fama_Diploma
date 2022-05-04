@@ -1,0 +1,107 @@
+.about {
+    height: 80vh;
+    width: 100%;
+    object-fit: contain;
+    color: #0B0101;
+    flex-direction: column;
+}
+
+
+.about .about-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    height: 100%;
+    padding: 1rem;
+    text-align: left;
+    margin: 30px;
+    margin-left: 10px;
+    
+    
+}
+
+.about p {
+    font-size: 1.4rem;
+    margin: 50px;
+    margin-left: 3px;
+}
+
+.about .btn {
+    margin: 50px;
+    margin-left: 5px;
+    
+    
+   
+}
+
+.bottom-text h2 {
+    font-size: 1.7rem;
+    text-align: center;
+    
+}
+.about img{
+    position: absolute;
+    width: 100%;
+    height: 120%;
+    object-fit: cover;
+    z-index: -1;
+    right:0px;
+    left:0px;
+    top:10px;
+}
+
+@media screen and (max-width: 700px) {
+    .btn-group .btn {
+        width: 300px;
+        margin: 10 auto;
+        align-items: center;
+        padding: 15px;
+        margin-left: 5px;
+        justify-content: center;
+      
+    }
+    .about .about-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+        height: 100%;
+        padding: 1rem;
+        text-align: left;
+        margin: 40px;
+        margin-left: 10px;
+        font-size: 14px
+        
+        
+    }
+    
+    .about p {
+        font-size: 1.4rem;
+        margin: 50px;
+        margin-left: 3px;
+        font-size:20px;
+    }
+    
+    .about .btn {
+        margin:140px;
+        align-self: center;
+        
+       
+    }
+    
+    .bottom-text h2 {
+        font-size: 1.7rem;
+        text-align: center;
+        
+    }
+}
+
+
+
+
+
+
+
+
+
