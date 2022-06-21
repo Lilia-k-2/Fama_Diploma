@@ -11,72 +11,52 @@ import fama_viber from '../../assets/viber.png';
 import fama_whatsapp from '../../assets/whatsapp.png';
 import styled from 'styled-components';
 
-// const StyledGroupPhotoWrapper = styled.div`
-//     & img {
-       
-//         width: 8%;
-//         height: 100%;
-//         margin-right: 5px;
-        
-//     }
-        
-    
-        
-        
-        
-       
-        
-    
-        
-    
-   
-        
-
-// `
-const StyledTelephoneImageWrapper = styled.div`
-
+const StyledGroupPhotoWrapper = styled.div`
     & img {
        
-       
-       align-items: center;
-       float: left; 
-       
-    }
-`
-const StyledMailImageWrapper = styled.div`
-
-    & img {
-       
-   
+        width: 20px;
+        height: 100%;
+        margin-right: 10px;
         
-        
-        float: left; 
-        margin: 0px;
         
         
     }
+        
+
 `
+
+
 
 const Footer = () => {
     return (
         <div className='footer'>
             <div className="container">
-                <div className="col">
-                    <StyledTelephoneImageWrapper>   
-                    <img src = {fama_telephone} />  <h4>0 800 33 46 76</h4> 
-                    </StyledTelephoneImageWrapper>
-                       
-                </div>
+                    <div className="col">
+                    <StyledGroupPhotoWrapper>
+                            <img src = {fama_telephone} />  <h4>0 800 33 46 76</h4> 
+                            
+                    </StyledGroupPhotoWrapper>
+                    <StyledGroupPhotoWrapper>
+                            <img src = {fama_telephone} />  <h4>+38 (044) 390 16 10</h4> 
+                            
+                    </StyledGroupPhotoWrapper>
+                    <StyledGroupPhotoWrapper>
+                            <img src = {fama_telephone} />  <h4>+38 (067) 829 40 29</h4> 
+                            
+                    </StyledGroupPhotoWrapper>
+                        
+                    </div>
 
                 <div className="col">
-                <StyledMailImageWrapper>
-                    <img src = {fama_mail}/>
-                    <h4>info@fama-presents.com.ua</h4>
-                </StyledMailImageWrapper>
-                <StyledMailImageWrapper>
-                    <img src = {fama_mail} />
-                    <h4>me@fama-presents.com.ua</h4>
-                </StyledMailImageWrapper>
+                    <StyledGroupPhotoWrapper>
+                        <img src = {fama_mail}/>
+                        <h4>info@fama-presents.com.ua</h4>
+                    </StyledGroupPhotoWrapper>
+
+                    <StyledGroupPhotoWrapper>
+                        <img src = {fama_mail} />
+                        <h4>me@fama-presents.com.ua</h4>
+                    </StyledGroupPhotoWrapper>
                 
                 </div>
                 
@@ -87,7 +67,7 @@ const Footer = () => {
                 </div>
                 <div className="col">
                     <h4>Ми в соціальних мережах:</h4>
-                    {/* <StyledGroupPhotoWrapper> */}
+                    <StyledGroupPhotoWrapper>
                         <img src = {fama_facebook} />
                         <img src = {fama_instagram} />
                         <img src = {fama_youtube} />
@@ -95,7 +75,7 @@ const Footer = () => {
                         <img src = {fama_telegram} />
                         <img src = {fama_viber} />
                         <img src = {fama_whatsapp} />
-                    {/* </StyledGroupPhotoWrapper> */}
+                    </StyledGroupPhotoWrapper>
                     
 
 

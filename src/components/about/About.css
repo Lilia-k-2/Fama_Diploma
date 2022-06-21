@@ -1,28 +1,41 @@
 .about {
-    height: 80vh;
+    background-image: url('../../assets/background-presents.png');
+    background-color: #F6F3EF;
+    background-repeat: no-repeat;
+    height:100vh;
     width: 100%;
-    object-fit: contain;
-    color: #0B0101;
-    flex-direction: column;
+    background-position:center;
+    background-size: cover;
+    float: none;
+    clear: both;
+    padding-top: 10%;
+   
+    
+   
+
+    
 }
 
 
 .about .about-text {
+    font-size: 14px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: left;
     height: 100%;
-    padding: 1rem;
+    padding: 2rem;
     text-align: left;
     margin: 30px;
     margin-left: 10px;
+    max-width: 50%;
+    font-family: 'Mukta Mahee', sans-serif;
     
     
 }
 
 .about p {
-    font-size: 1.4rem;
+    font-size: 20px;
     margin: 50px;
     margin-left: 3px;
 }
@@ -30,65 +43,80 @@
 .about .btn {
     margin: 50px;
     margin-left: 5px;
+    padding: 13px 28px;
+    font-size: 15px;
     
     
    
 }
 
 .bottom-text h2 {
-    font-size: 1.7rem;
+    font-size: 14px;
     text-align: center;
     
 }
-.about img{
-    position: absolute;
-    width: 100%;
-    height: 120%;
-    object-fit: cover;
-    z-index: -1;
-    right:0px;
-    left:0px;
-    top:10px;
-}
+
+
 
 @media screen and (max-width: 700px) {
+    .about {
+        height:700px;
+        width: 100%;
+        background-image: url('../../assets/pattern.png');
+        background-size: cover;
+        float: none;
+        clear: both;
+        padding-top: 10%;
+        margin-bottom: -200px;
+        max-width: 550px;
+        
+        
+        
+        
+    }
+    
     .btn-group .btn {
-        width: 300px;
-        margin: 10 auto;
-        align-items: center;
-        padding: 15px;
-        margin-left: 5px;
+        display: flex;
+        flex-wrap: nowrap;
         justify-content: center;
-      
+        text-align: center;
+        align-items: center;
+        margin-top: 100px;
+        bottom: 0px;
+        width:100%;
+        margin-left:auto;
+        margin-right:auto;
+        
+       
+        
+
+              
     }
     .about .about-text {
+        
         display: flex;
-        flex-direction: column;
+       
         justify-content: center;
-        align-items: left;
+        
         height: 100%;
         padding: 1rem;
-        text-align: left;
-        margin: 40px;
+        max-width:100%;
         margin-left: 10px;
-        font-size: 14px
-        
+        font-size: 12px;
+        margin-top: -100px;
+        font-family: 'Mukta Mahee', sans-serif;
         
     }
     
     .about p {
-        font-size: 1.4rem;
         margin: 50px;
         margin-left: 3px;
-        font-size:20px;
+        font-size:17px;
+        
+        
     }
     
-    .about .btn {
-        margin:140px;
-        align-self: center;
-        
-       
-    }
+    
     
     .bottom-text h2 {
         font-size: 1.7rem;
@@ -96,9 +124,6 @@
         
     }
 }
-
-
-
 
 
 

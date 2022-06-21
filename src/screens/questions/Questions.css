@@ -1,0 +1,266 @@
+.card {
+    background-image: url('../../assets/bgimg.png');
+    background-repeat: no-repeat;
+    height: 88vh;
+    width: 100%;
+    background-position:left;
+    background-size: cover;
+    max-height: 20%;
+    float: none;
+    clear: both;
+    padding-top: 5%;
+    background-position-x: -80px;
+    background-position-y: -90px;
+    
+    
+}
+.content .mb-5 {
+    
+    max-width: 700px;
+    font-size: 20px;
+    align-items: left;
+    height: 90%;
+    text-align: left;
+    max-height: 20px;
+    margin-left: 100px;
+    font-family: 'Mukta Mahee',sans-serif;
+    margin-bottom: 100px;
+    
+    
+    
+    
+}
+.group-images .img_style{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100 auto;
+    padding-left: 750px;
+    margin-top:-500px;
+    height: 400px;
+    
+    
+   
+
+    
+   
+}
+.content .control {
+	accent-color: black;
+    
+}
+.group-button{
+    
+    
+    margin: 50px;
+    margin-left: 5px;
+    flex-direction: row;
+    text-align: left;
+    
+    
+    display: inline-block;
+
+    
+    padding-left:100px;
+    
+    
+    
+   
+    
+   
+    
+    
+}
+
+.group-button .button_result {
+    
+    padding:13px 28px;
+    font-size: 15px;
+    background-color: #0B0101;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: 'Mukta Mahee', sans-serif;
+    font-weight:normal
+
+
+    
+}
+.group-button .button_next {
+    
+    padding:13px 70px;
+    font-size: 15px;
+    background-color: #0B0101;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    font-family: 'Mukta Mahee', sans-serif;
+    font-weight:normal;
+    margin-left: 400px;
+
+    
+
+    
+    
+}
+
+    
+    
+    
+
+
+label.radio {
+    display: flex;
+    position: relative;
+    font-size: 17px;
+    margin:50px;
+    margin-left: 100px;
+    max-height:20px;
+    max-width:350px;
+    font-family: 'Mukta Mahee',sans-serif;
+    font-weight:normal;
+    
+    
+}
+
+label.radio input {
+  margin-right: 10px;
+ 
+  
+}
+
+
+
+
+@media screen and (max-width: 700px){
+    .card {
+        
+  
+        background-image: url('../../assets/pattern.png');
+        background-size:auto;
+        max-width: 100%;
+        max-height:100%;
+        float: none;
+        clear: both;
+        padding-top: 10%;
+        background-position-x: -130px;
+        background-position-y: -370px;
+       
+        
+        
+    }
+    .group-images .img_style{
+    
+        
+        display: none;
+
+    
+    }
+    .content .mb-5 {
+    
+        max-width: 370px;
+        font-size: 18px;
+        align-items: left;
+        text-align: left;
+        margin-left: 50px;
+        margin-top: -20px;
+        padding-bottom: 40px;
+        
+        
+        
+        
+    }
+    .content .control {
+        accent-color: black;
+        max-width: 730px;
+        max-height: 150px
+        
+        
+    }
+     .group-button{
+        /* display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: flex-start;
+        padding: 10px 50px;
+        padding-top: 80px; */
+      
+        
+      
+        
+       
+        
+       
+        
+        
+    }
+     
+    .group-button .button_result {
+       
+        /* display: block;
+        justify-content: center;
+        align-items: left;
+        height: 100%;
+        padding: 20px;
+        text-align: left;
+        margin: 40px;
+        margin-left: 10px;
+        font-size: 14px;
+        width: 200px;
+        font-family: 'Mukta Mahee', sans-serif;
+        font-weight:normal */
+        display: none
+    
+        
+    }
+    .group-button .button_next {
+       
+        /* display: flex;
+        justify-content: center;
+        align-items: left;
+        height: 100%;
+        width: 200px;
+        padding: 20px;
+        text-align: left;
+        margin: 40px;
+        margin-left: 10px;
+        font-size: 14px;
+        font-family: 'Mukta Mahee', sans-serif;
+        font-weight:normal */
+    
+        display: none
+        
+    }  
+    
+    
+
+        
+        
+        
+    
+    
+    label.radio {
+        
+        font-size: 15px;
+        margin: 50px;
+        max-height:10px;
+        
+        
+    }
+    
+    label.radio input {
+
+      margin-right: 10px;
+      max-height:10px;
+      
+      
+    }
+    
+}
+    
+
+

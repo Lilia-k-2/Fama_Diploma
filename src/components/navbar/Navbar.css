@@ -1,7 +1,8 @@
 .navbar {
-    width: 100%;
-    height:-5px;
+    
+    
     background-color: #0B0101;
+    height:65px
     
 }
 
@@ -21,7 +22,7 @@
 
 
 .navbar img{
-    width: 170px;
+    width: 140px;
     
     
     
@@ -35,22 +36,32 @@
     float:right;
     display: flex;
     padding: 1rem;
+    font-size:12px;
+    font-family: 'Mukta Mahee',sans-serif;
+    font-weight:normal
     
 }
 .nav-item img{
-    width: 20px;
+    width: 14px;
 }
 
 @media screen and (max-width:700px) {
+    .navbar {
+    
+    
+        background-color: #0B0101;
+        height:80px
+        
+    }
     .navbar img {
-        width: 170px;
+        height:60px;
         margin: 0;
         align-items: center;
     }
     .navbar li{
         width: 200px;
         height: 40px;
-        font-size:13px;
+        font-size:12px;
         
         
         
@@ -58,8 +69,8 @@
         
     }
     .nav-item img{
-        width: 15px;
-        height:15px;
+        width: 14px;
+        height:14px;
         display: flex;
     }
 }
