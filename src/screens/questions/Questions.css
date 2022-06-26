@@ -40,8 +40,9 @@
     justify-content: center;
     margin: 150px auto 0 auto;
     padding-left: 50%;
-    margin-top:-350px;
+    margin-top:-300px;
     height: 400px;
+    max-height:400px
     
     
     
@@ -55,19 +56,15 @@
 .content .control {
 	accent-color: black;
     
+    
 }
 .group-button{
-    
-    
     margin: 50px;
     margin-left: 5px;
     flex-direction: row;
     text-align: left;
-    
     position:fixed;
     display: inline-block;
-
-    
     padding-left:100px;
         
 }
@@ -99,7 +96,7 @@
     cursor: pointer;
     font-family: 'Mukta Mahee', sans-serif;
     font-weight:normal;
-    margin-left: 400px;
+    margin-left: 500px;
     position:fixed;
 
     
@@ -112,7 +109,7 @@ label.radio {
     display: flex;
     position: relative;
     font-size: 17px;
-    margin:40px;
+    margin:50px;
     margin-left: 100px;
     max-height:20px;
     max-width:600px;
@@ -128,14 +125,14 @@ label.radio input {
   
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 600px){
     .card {
         
-  
+        
         background-image: url('../../assets/pattern.png');
         background-size:auto;
         max-width: 100%;
-        max-height:100%;
+        max-height:50%;
         float: none;
         clear: both;
         padding-top: 10%;
@@ -154,93 +151,74 @@ label.radio input {
     }
     .content .mb-5 {
     
-        max-width: 370px;
-        font-size: 18px;
+        max-width: 500px;
+        font-size: 20px;
         align-items: left;
         text-align: left;
-        margin-left: 50px;
-        margin-top: -20px;
-        padding-bottom: 40px;
-        
-        
-        
-        
+        margin-left: 30px;
+        margin-top: -10px;
+        padding-bottom: 110px;  
     }
     .content .control {
         accent-color: black;
         max-width: 730px;
-        max-height: 150px
+        max-height: 150px;
+        font-size:20px
         
         
     }
      .group-button{
-        /* display: flex;
+        position: relative;
+        display: flex;
         flex-direction: row;
         justify-content: flex-start;
         align-content: stretch;
-        align-items: flex-start;
-        padding: 10px 50px;
-        padding-top: 80px; */
-      
-        
-      
-        
-       
-        
-       
-        
+        align-items: flex-start;    
         
     }
      
     .group-button .button_result {
        
-        /* display: block;
+       
+        
+        flex-wrap: nowrap;
         justify-content: center;
-        align-items: left;
-        height: 100%;
-        padding: 20px;
-        text-align: left;
-        margin: 40px;
-        margin-left: 10px;
-        font-size: 14px;
-        width: 200px;
-        font-family: 'Mukta Mahee', sans-serif;
-        font-weight:normal */
-        display: none
+        text-align: center;
+        align-items: center;
+        font-size:15px;
+        padding: 11px 28px;
+        bottom: 30px;
+        width:45%;
+        margin-left:-25%;
+        
+        
     
         
     }
     .group-button .button_next {
        
-        /* display: flex;
+        
+        
+        flex-wrap: nowrap;
         justify-content: center;
-        align-items: left;
-        height: 100%;
-        width: 200px;
-        padding: 20px;
-        text-align: left;
-        margin: 40px;
-        margin-left: 10px;
-        font-size: 14px;
-        font-family: 'Mukta Mahee', sans-serif;
-        font-weight:normal */
+        text-align: center;
+        align-items: center;
+        bottom: 30px;
+        width:45%;
+        padding: 20px 28px;
+        margin-left:25%;
+        
+        
     
-        display: none
+        
         
     }  
-    
-    
-
-        
-        
-        
-    
-    
     label.radio {
         
         font-size: 15px;
         margin: 50px;
-        max-height:10px;
+        max-height:50px;
+        
         
         
     }
@@ -248,7 +226,9 @@ label.radio input {
     label.radio input {
 
       margin-right: 10px;
+      margin-top: 5px;
       max-height:10px;
+      margin-left:-20px
       
       
     }

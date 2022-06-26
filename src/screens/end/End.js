@@ -7,13 +7,17 @@ import product_card from '../../assets/product_data'
 
 const End = () => {
   // Default number of product items
+  
   const [numberOfItems, setNumberOfItems] = useState(4);
   
 
   console.log(product_card);
+  
 
   const listItemsAll = product_card.map((item) =>
-      <div className="card_end" key={item.id}>
+  
+        <div className="card_end" key={item.id}>
+          
           <div className="card_img">
               <img src={item.thumb} />
           </div>
@@ -22,7 +26,9 @@ const End = () => {
               <p className="price">{item.price}<span>{item.currency}</span></p>
               <div className="button_end">Придбати</div>
           </div>
-      </div>
+        
+        </div>
+       
     );
 
     const handleNumberOfVisibleItems = () => {
@@ -37,10 +43,14 @@ const End = () => {
 
   return (
     <>
-      <div className="main_content">
+    <div className="main_content">
+      
+      
           {listItems}
+          <button onClick={handleNumberOfVisibleItems}>Show More</button>
+          
       </div>
-      <button onClick={handleNumberOfVisibleItems}>Show More</button>
+      
       <Footer></Footer>
     </>
   )};
