@@ -1,0 +1,36 @@
+.error {
+    background-image: url('../../../public/images/error.png');
+    background-color: #F6F3EF;
+    background-repeat: no-repeat;
+    height:100vh;
+    width: 100%;
+    background-position:center;
+    background-size: cover;
+    float: none;
+    clear: both;
+    
+   
+}
+
+.error p{
+    color: #ffff;
+    font-family: 'Mukta Mahee', sans-serif;
+    text-align: center;
+    position: relative;
+    padding:350px;
+    font-size: 20px
+}
+
+.error-button .errorbtn{
+   
+    border:0;
+    padding: 13px 28px;
+    font-size: 15px;
+    background-color: #D39644;
+    color:#fff;
+    font-family: 'Mukta Mahee', sans-serif;
+    text-align: center;
+    align-items: center;
+    
+    
+}

@@ -1,15 +1,8 @@
 import React from 'react'
 import './About.css';
-import fama_background from '../../assets/background-presents.png';
-import styled from 'styled-components';
-import { Link } from "react-router-dom";
 import Footer from '../footer/Footer';
 
-
-
-
-
-const About = ({onQuizStart}) => {
+const About = ({onQuizStart, onQuizError}) => {
     return (
         <>
             <div className='about'>
@@ -21,6 +14,7 @@ const About = ({onQuizStart}) => {
                         <div className="btn-group">
                             
                             <button className="btn" onClick={onQuizStart}>Почати тест</button>
+                            <button className="btn-error" onClick={onQuizError}>404</button>
                         </div>
                     
                 </div>
@@ -29,6 +23,5 @@ const About = ({onQuizStart}) => {
         </>
     )
 }
-
 
 export default About

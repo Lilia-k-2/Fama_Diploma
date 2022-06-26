@@ -16,85 +16,66 @@ const StyledGroupPhotoWrapper = styled.div`
        
         width: 20px;
         height: 100%;
-        margin-right: 10px;
-        
-        
-        
+        margin-right: 10px;    
     }
-        
-
 `
-
-
-
 const Footer = () => {
     return (
         <div className='footer'>
             <div className="container">
                     <div className="col">
-                    <StyledGroupPhotoWrapper>
-                            <img src = {fama_telephone} />  <h4>0 800 33 46 76</h4> 
-                            
-                    </StyledGroupPhotoWrapper>
-                    <StyledGroupPhotoWrapper>
-                            <img src = {fama_telephone} />  <h4>+38 (044) 390 16 10</h4> 
-                            
-                    </StyledGroupPhotoWrapper>
-                    <StyledGroupPhotoWrapper>
-                            <img src = {fama_telephone} />  <h4>+38 (067) 829 40 29</h4> 
-                            
-                    </StyledGroupPhotoWrapper>
+                        <StyledGroupPhotoWrapper>
+                                <img src = {fama_telephone} />  <h4>0 800 33 46 76</h4> 
+                                
+                        </StyledGroupPhotoWrapper>
+                        <StyledGroupPhotoWrapper>
+                                <img src = {fama_telephone} />  <h4>+38 (044) 390 16 10</h4> 
+                                
+                        </StyledGroupPhotoWrapper>
+                        <StyledGroupPhotoWrapper>
+                                <img src = {fama_telephone} />  <h4>+38 (067) 829 40 29</h4> 
+                                
+                        </StyledGroupPhotoWrapper>
                         
                     </div>
 
-                <div className="col">
-                    <StyledGroupPhotoWrapper>
-                        <img src = {fama_mail}/>
-                        <h4>info@fama-presents.com.ua</h4>
-                    </StyledGroupPhotoWrapper>
+                    <div className="col">
+                        <StyledGroupPhotoWrapper>
+                            <img src = {fama_mail}/>
+                            <h4>info@fama-presents.com.ua</h4>
+                        </StyledGroupPhotoWrapper>
 
-                    <StyledGroupPhotoWrapper>
-                        <img src = {fama_mail} />
-                        <h4>me@fama-presents.com.ua</h4>
-                    </StyledGroupPhotoWrapper>
-                
-                </div>
-                
-
-                <div className="col">
-                    <h4>Інтернет-магазин Fama Presents</h4>
-                    <p>Вул.О.Гончара 52 м.Київ, Україна</p>
-                </div>
-                <div className="col">
-                    <h4>Ми в соціальних мережах:</h4>
-                    <StyledGroupPhotoWrapper>
-                        <img src = {fama_facebook} />
-                        <img src = {fama_instagram} />
-                        <img src = {fama_youtube} />
-                        <img src = {fama_twitter} />
-                        <img src = {fama_telegram} />
-                        <img src = {fama_viber} />
-                        <img src = {fama_whatsapp} />
-                    </StyledGroupPhotoWrapper>
+                        <StyledGroupPhotoWrapper>
+                            <img src = {fama_mail} />
+                            <h4>me@fama-presents.com.ua</h4>
+                        </StyledGroupPhotoWrapper>
                     
-
-
+                    </div>
                     
-                </div>
-                
-
-
-  
-
-               
-               
-               
+                    <div className="col">
+                        <h4>Інтернет-магазин Fama Presents</h4>
+                        <p>Вул.О.Гончара 52 м.Київ, Україна</p>
+                    </div>
+                    <div className="col">
+                        <h4>Ми в соціальних мережах:</h4>
+                        <StyledGroupPhotoWrapper>
+                            <img src = {fama_facebook} />
+                            <img src = {fama_instagram} />
+                            <img src = {fama_youtube} />
+                            <img src = {fama_twitter} />
+                            <img src = {fama_telegram} />
+                            <img src = {fama_viber} />
+                            <img src = {fama_whatsapp} />
+                        </StyledGroupPhotoWrapper>
+                           
+                    </div>
+                  
             </div>
             <div className='secondFooter'>
                 <div className ='scontainer'>
                     <div className='col'>
                     
-                    <h5>Інтернет-магазин елітних подарунків. Подарунки для чоловіків. Подарунки для жінок. VIP подарунки.</h5>
+                        <h5>Інтернет-магазин елітних подарунків. Подарунки для чоловіків. Подарунки для жінок. VIP подарунки.</h5>
  
                     </div>
                 </div>
