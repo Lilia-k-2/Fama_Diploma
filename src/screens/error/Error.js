@@ -8,13 +8,13 @@ const Error = ({onQuizAbout}) => {
         <>
             <div className='error'>
                 <div className="error-text">
-                <p>Щось пішло не так. Сторінка не працює</p>
+                    <p>Щось пішло не так. Сторінка не працює</p>
 
                 </div>
-                    <div className="error-button">
+                <div className="error-button">
                             
-                        <button className="errorbtn" onClick={onQuizAbout}>До головної</button>
-                    </div> 
+                    <button className="errorbtn" onClick={onQuizAbout}>До головної</button>
+                </div> 
                     
                 
             </div>

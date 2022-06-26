@@ -7,12 +7,12 @@ import product_card from '../../assets/product_data'
 
 const End = () => {
   // Default number of product items
-  // const [numberOfItems, setNumberOfItems] = useState(4);
+  const [numberOfItems, setNumberOfItems] = useState(4);
   
 
-  // console.log(product_card);
+  console.log(product_card);
 
-  const listItems = product_card.map((item) =>
+  const listItemsAll = product_card.map((item) =>
       <div className="card_end" key={item.id}>
           <div className="card_img">
               <img src={item.thumb} />
@@ -25,14 +25,14 @@ const End = () => {
       </div>
     );
 
-    // const handleNumberOfVisibleItems = () => {
-    //   setNumberOfItems(numberOfItems + 4);
-    // }
+    const handleNumberOfVisibleItems = () => {
+      setNumberOfItems(numberOfItems + 4);
+    }
 
-    // let listItems = listItemsAll.slice(0, numberOfItems);
-    // useEffect(() => {
-    //   const listItems = listItemsAll.slice(0, numberOfItems);
-    // }, [numberOfItems]);
+    let listItems = listItemsAll.slice(0, numberOfItems);
+    useEffect(() => {
+      const listItems = listItemsAll.slice(0, numberOfItems);
+    }, [numberOfItems]);
   
 
   return (
@@ -40,7 +40,7 @@ const End = () => {
       <div className="main_content">
           {listItems}
       </div>
-      {/* <button onClick={handleNumberOfVisibleItems}>Show More</button> */}
+      <button onClick={handleNumberOfVisibleItems}>Show More</button>
       <Footer></Footer>
     </>
   )};

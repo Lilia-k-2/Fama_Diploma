@@ -18,7 +18,8 @@
     text-align: center;
     position: relative;
     padding:350px;
-    font-size: 20px
+    font-size: 20px;
+    
 }
 
 .error-button .errorbtn{
@@ -31,6 +32,53 @@
     font-family: 'Mukta Mahee', sans-serif;
     text-align: center;
     align-items: center;
+    margin: 0;
+    position: absolute;
+    top: 90%;
+    left:45%
+  
+}
+@media screen and (max-width: 700px) {
+    .error {
+        background-image: url('../../../public/images/error.png');
+        background-color: #F6F3EF;
+        background-repeat: no-repeat;
+        background-size: cover;
+        float: none;
+        clear: both;
+        padding-top: 10%;
+        margin-bottom: -200px;
+        max-width: 550px;
+        max-height: 500px;
+        height:500px;
+        width: 100%;
+        
+        
+       
+    }
     
+    .error p{
+        color: #ffff;
+        font-family: 'Mukta Mahee', sans-serif;
+        text-align: center;
+        align-items: center;
+       
+        font-size: 20px;
+        
+    }
     
+    .error-button .errorbtn{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        margin-top: 100px;
+        bottom: 0px;
+        width:100%;
+        margin-left:auto;
+        margin-right:auto;
+      
+    }
+
 }

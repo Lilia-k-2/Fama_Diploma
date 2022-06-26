@@ -1,11 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import '../questions/Questions.css';
 
-
-
-
-
-const Questions = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onSetActiveQuestion, onSetStep, onQuizEnd }) => {
+const Questions = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, onSetActiveQuestion, onSetRelatedQuestion, onSetStep, onQuizEnd }) => {
   const [selected, setSelected] = useState('');
   const [error, setError] = useState('');
   const radiosWrapper = useRef();
@@ -29,14 +25,16 @@ const Questions = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, on
       return setError('Please select one option!');
     }
     onAnswerUpdate(prevState => {
-      console.log(prevState);
       return [...prevState, { q: data.question, a: selected }]
     });
     setSelected('');
     if(activeQuestion < numberOfQuestions - 1) {
-      console.log(data);
-    
-      onSetActiveQuestion(activeQuestion + 1);
+      onSetRelatedQuestion(false);
+      if(data.relatedQuestions) {
+        onSetRelatedQuestion(true);
+      } else {
+        onSetActiveQuestion(activeQuestion + 1);
+      }
     } else {
       onSetStep(3);
     }
@@ -56,32 +54,18 @@ const Questions = ({ data, onAnswerUpdate, numberOfQuestions, activeQuestion, on
               </label>
             ))}
           </div>
-        
-          
-       
-          
-        </div>
+     </div>
        
       </div>
       <div className = "group-button">
           <button className="button_result" onClick={onQuizEnd}>Перейти на сайт</button>
-            
           <button className="button_next" onClick={nextClickHandler}>Далі</button>
       </div>
       <div className = "group-images">
-          <img className="img_style" src={data.url}></img>
-          
+          <img className="img_style" alt={data.id} src={data.url}></img>
       </div>
-    </div>
-      
-  
-
-    
+    </div>  
   );
 }
-
-
-
-
 
 export default Questions

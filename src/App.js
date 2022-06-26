@@ -10,6 +10,7 @@ import Error from './screens/error/Error';
 const App = () => {
 const [step, setStep] = useState(1);
 const [activeQuestion, setActiveQuestion] = useState(0);
+const [relatedQuestion, setRelatedQuestion] = useState(false);
 const [answers, setAnswers] = useState([]);
 
 const quizStartHandler = () => {
@@ -19,12 +20,23 @@ const quizEndHandler = () => {
   setStep(3);
 }
 const quizErrorHandler = () => {
-  console.log('4');
   setStep(4);
 }
 const quizAboutHandler = () => {
-  console.log('5');
   setStep(1);
+}
+
+function getRelatedQuestion() {
+  const result = quizData.data[activeQuestion].relatedQuestions.find( ({ questionType }) => { 
+    return questionType === answers[activeQuestion]?.a 
+  })
+  if(result !== undefined) {
+    return result;
+  } else {
+    setRelatedQuestion(false);
+    setActiveQuestion(activeQuestion + 1);
+    return null
+  }
 }
 
   return (
@@ -36,11 +48,12 @@ const quizAboutHandler = () => {
       />}
       
       {step === 2 && <Questions 
-        data={quizData.data[activeQuestion]}
+        data={relatedQuestion ? getRelatedQuestion() : quizData.data[activeQuestion]}
         onAnswerUpdate={setAnswers}
         numberOfQuestions={quizData.data.length}
         activeQuestion={activeQuestion}
         onSetActiveQuestion={setActiveQuestion}
+        onSetRelatedQuestion={setRelatedQuestion}
         onSetStep={setStep}
         onQuizEnd={quizEndHandler}
       />}
