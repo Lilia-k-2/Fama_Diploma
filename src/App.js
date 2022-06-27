@@ -8,7 +8,7 @@ import End from './screens/end/End';
 import Error from './screens/error/Error';
 
 const App = () => {
-const [step, setStep] = useState(1);
+const [step, setStep] = useState(3);
 const [activeQuestion, setActiveQuestion] = useState(0);
 const [relatedQuestion, setRelatedQuestion] = useState(false);
 const [answers, setAnswers] = useState([]);

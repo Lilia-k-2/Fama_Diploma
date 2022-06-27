@@ -17,13 +17,13 @@
 }
 
 .main_content {
-    background-image: url('../../../public/images/Line.png');
+    /* background-image: url('../../../public/images/Line.png'); */
     background-color: rgb(247, 247, 247);
     background-size: 450px;
-    position: relative;
     background-repeat: no-repeat;
-    background-position-x: 110%;
-    background-position-y: -15%;
+    
+    
+    
     float: none;
     clear: both;
     width: 100%;
@@ -136,18 +136,70 @@
     height: 50px;
     font-size: 20px;
     border-radius: 1px;
-    border-color: black;
+    border-color: #0B0101;
     border-style: solid;
 
 
     background-color: #fff;
-    color: black;
+    color: #0B0101;
     cursor: pointer;
     position: relative;
     /* -webkit-transition: background-color .3s ease; */
     /* transition: background-color .3s ease; */
     overflow: hidden;
 }
+
+.endbtn {
+    flex-wrap: nowrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        bottom: 30px;
+        width:20%;
+        padding: 10px 5px;
+        margin-left:40%;
+        font-size:15px;
+        margin-bottom: 20px;
+        margin-top:20px;
+        background-color: #0B0101;
+        color:#FFFF;
+        cursor: pointer
+}
+
+@media screen and (max-width: 700px) {
+    .main_content{
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .main_content .card_end {
+    
   
+    
+        flex-basis: 25%;
+        width: 100%;
+        height:100%;
+        border-radius: 2px;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        position: relative;
+        -webkit-transform: scale(1.0);
+                transform: scale(1.0);
+        /* -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out; */
+        
+        margin-bottom: 20px;
+        justify-content: space-between;
+        background-color: rgb(255, 255, 255);
+        margin:0px;
+        padding:0px;
+       
+        
+    }
+}
   
   

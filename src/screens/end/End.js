@@ -8,7 +8,7 @@ import product_card from '../../assets/product_data'
 const End = () => {
   // Default number of product items
   
-  const [numberOfItems, setNumberOfItems] = useState(4);
+  const [numberOfItems, setNumberOfItems] = useState(8);
   
 
   console.log(product_card);
@@ -44,10 +44,10 @@ const End = () => {
   return (
     <>
     <div className="main_content">
-      
+        
       
           {listItems}
-          <button onClick={handleNumberOfVisibleItems}>Show More</button>
+          <button className="endbtn" onClick={handleNumberOfVisibleItems}>Показати ще</button>
           
       </div>
       
